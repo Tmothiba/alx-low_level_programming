@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <unistd.h>
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+char toBePrinted[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(1,toBePrinted, sizeof(toBePrinted)-1);
+return (1);
+}
