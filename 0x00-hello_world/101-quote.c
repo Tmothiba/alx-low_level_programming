@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-char toBePrinted[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-write(1,toBePrinted, sizeof(toBePrinted)-1);
+char text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(1, text, sizeof(text)- 1);
 return (1);
 }
