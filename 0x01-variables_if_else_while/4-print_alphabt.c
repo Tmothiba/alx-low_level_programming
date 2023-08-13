@@ -1,0 +1,25 @@
+#include <stdio.h>
+/**
+ * main - printing last didit of a number
+ *
+ * Return: Always 0 (Succes)
+ */
+int main(void)
+{
+	char albet = 'a';
+
+	for (albet = 'a'; albet <= 'z'; albet++)
+	{
+		if (albet == 'e')
+		{
+			continue;
+		}
+		if (albet == 'q')
+		{
+			continue;
+		}
+		putchar(albet);
+	}
+	putchar('\n');
+	return (0);
+}
