@@ -17,7 +17,7 @@ int main(void)
 			break;
 		}
 		putchar(',');
-		putchar('\t');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
