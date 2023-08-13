@@ -4,13 +4,14 @@
  *
  * Return: Always 0 (Succes)
  */
-int main()
+int main(void)
 {
-        char albet = 'a';
-        for( albet = 'a'; albet <= 'z';albet++)
-        {
-                putchar(albet);
-        }
-        putchar('\n');
-        return(0);
+	char albet = 'a;
+
+	for (albet = 'a'; albet <= 'z'; albet++)
+	{
+		putchar(albet);
+	}
+	putchar('\n');
+	return (0);
 }
