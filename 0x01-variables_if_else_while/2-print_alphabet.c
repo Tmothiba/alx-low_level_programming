@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char albet = 'a;
+	char albet = 'a';
 
 	for (albet = 'a'; albet <= 'z'; albet++)
 	{
