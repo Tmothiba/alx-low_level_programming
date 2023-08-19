@@ -9,7 +9,7 @@ void times_table(void)
 	int a, b, c, d, e;
 
 	/* for as long as a <= 9, add 1 to a */
-	for (a = 0; a <= 9; a++)
+	for (a = 2; a <= 9; a++)
 	{
 	/* nested for loop*/
 	for (b = 0; b <= 9; b++)
