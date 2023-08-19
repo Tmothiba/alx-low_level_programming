@@ -1,5 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_HEADER_FILE
+#define MAIN_HEADER_FILE
+
+#include <stdio.h>
 
 int _isupper(int c);
 int _isdigit(int c);
