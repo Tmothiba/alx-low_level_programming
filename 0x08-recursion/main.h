@@ -10,4 +10,5 @@ int _putchar(char c);
 int _sqrt_recursion(int n);
 int square(int n, int i);
 int _pow_recursion(int x, int y);
+int prime(int n, int i);
 #endif
