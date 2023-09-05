@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 /**
  * _strdup- returns pointer to a space in memory.
@@ -10,7 +11,6 @@ char *_strdup(char *str)
 {
 	int i = 0, j;
 	char *arr = (char *)malloc((i + 1) * sizeof(char));
-
 
 	if (str == NULL || arr == NULL)
 	{
