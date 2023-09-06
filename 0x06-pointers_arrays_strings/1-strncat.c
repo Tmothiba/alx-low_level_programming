@@ -2,19 +2,31 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * *_strcat - concatinating 2 strings
+ * _strncat- concatinating 2 strings
  * @dest: string 1
+ * @n: input value
  * @src: string 2
  * Return: char
  */
 char *_strncat(char *dest, char *src, int n)
 {
-        char temp[100];
+	int i, j;
 
-	strncpy(temp, dest, n);
-	dest[n] = '\0';
+	i = 0;
 
-	strncat(temp, src, n - strlen(temp));
-	printf("%s", dest);
-        return (dest);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	j = 0;
+	while ((j < n) && (src[j] != '\0'))
+		{
+		dest[i] = src[j];
+		i++;
+		j++;
+		}
+
+	dest[i] = '\0';
+	return (dest);
 }
