@@ -1,6 +1,15 @@
-struct dog 
+/**
+ * struct dog - details of dog.
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of the dog
+ *
+ * Description: all details about the dog
+ *
+ */
+struct dog
 {
 	char *name;
-	float age;
-	char *owner;
+       	float age;
+       	char *owner;
 };
