@@ -58,10 +58,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!nameCopy && name)
 	{
 		free(new);
-		return(NULL);
+		return (NULL);
 	}
 	ownerCopy = newstr(owner);
-	if(!ownerCopy && owner)
+	if (!ownerCopy && owner)
 	{
 		free(nameCopy);
 		free(new);
