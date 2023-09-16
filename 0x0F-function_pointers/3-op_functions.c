@@ -7,7 +7,7 @@
  */
 int op_add(int a, int b)
 {
-	return(a + b);
+	return (a + b);
 }
 /**
  * op_sub - function that substract numbers
@@ -17,7 +17,7 @@ int op_add(int a, int b)
  */
 int op_sub(int a, int b)
 {
-	return (a -b);
+	return (a - b);
 }
 /**
  * op_mul- function that multiplies numbers
