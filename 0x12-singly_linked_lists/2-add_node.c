@@ -1,18 +1,16 @@
 #include <stdlib.h>
-#include "lists.h"
 #include <string.h>
+#include "lists.h"
 
 /**
- * add_node - pointer that adds a new node to the beginning of a list
- * @head: double pointer to the list_t
+ * add_node - adds a new node to the beginning of a linked list.
+ * @head: double pointer
  * @str: new string
- * Return: address of new element or NULL if fails
- *
+ * Return: the addree of new element or null
  */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	list_t *temp = *head;
 	unsigned int length = 0;
 
 	while (str[length])
@@ -26,17 +24,8 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	new->str = strdup(str);
 	new->len = length;
-	new->next = NULL;
-
-	if (*head == NULL)
-	{
-		*head = new;
-		return (new);
-	}
-	while (temp->next)
-	{
-		temp = temp->next;
-	}
-	temp->next = new;
-	return (new);
+	new->next = (*head);
+	(*head) = new;
+	return (*head);
 }
+
