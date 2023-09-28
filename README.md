@@ -1,1 +1,3 @@
- c programming
+function pointers
+alx-low_level_programming
+bit manipulation
